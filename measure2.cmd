@@ -1,0 +1,14 @@
+binaries\ptime binaries\ag\ag -cF "fair game" corpus.txt
+binaries\ptime binaries\ag64\ag -cF "fair game" corpus.txt
+binaries\ptime binaries\grep1\grep -cF "fair game" corpus.txt
+binaries\ptime binaries\grep2\grep -cF "fair game" corpus.txt
+binaries\ptime binaries\grep3\grep -cF "fair game" corpus.txt
+binaries\ptime binaries\grep4\grep -cF "fair game" corpus.txt
+binaries\ptime binaries\grep5\grep -cF "fair game" corpus.txt
+binaries\ptime binaries\grep6\grep -cF "fair game" corpus.txt
+binaries\ptime binaries\grep7\grep -cF "fair game" corpus.txt
+binaries\ptime binaries\grep8\grep -cF "fair game" corpus.txt
+binaries\ptime binaries\pt\pt /c "fair game" corpus.txt
+binaries\ptime binaries\pt64\pt /c "fair game" corpus.txt
+binaries\ptime binaries\sift\sift -cQ "fair game" corpus.txt
+binaries\ptime binaries\sift64\sift -cQ "fair game" corpus.txt
