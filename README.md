@@ -1,5 +1,14 @@
 # frequency count benchmark
-Benchmark various solutions for counting word and phrase frequency in corpora
+Benchmarking various solutions for counting word and phrase frequency in corpora.
+
+### why?
+there are at least half a dozen popular utilities that search for strings inside text files. most of them claim to be the fastest. to test their claims, we put them to the test.
+
+### how?
+- testing was done on a very modest Intel Pentium N3540 @ 2.16GHz (4 cores)  with 8GB RAM running Windows 8.1 x64
+- the ```corpus.txt``` file is a 792 MB fragment of the OpenSubtitles2016 corpus [freely available here](http://opus.lingfil.uu.se/OpenSubtitles2016.php) or direct link to the [English version](http://opus.lingfil.uu.se/download.php?f=OpenSubtitles2016/en.tar.gz)
+- an extensive collection of file searching binaries was tested, see below
+
 
 ### benchmark candidates - popular text searching utilities
 Utility | Arch | Source url | Folder|
@@ -58,3 +67,14 @@ Utility | Arch | Source url | Folder|
 |sift 0.8.0 | binaries\sift64\sift -cQi "fair game" corpus.txt | 5.062 | 4.524 | 4.508 | 4.498 | 4.522 | 4.51 | 4.556|
 
 
+### implementation details
+- see ```measure.cmd``` and the benchmark runner ```run-measure.cmd``` 
+- number of characters of corpus.txt was established by running ``` cat corpus.txt | wc -m ```
+
+### the never-ending argument
+Benchmarks are always hotly contested. Your mileage may vary. However, two conclusions come to mind:
+- benchmarks published by creators of the respective utilities - [sift](https://sift-tool.org/performance), [ag](https://github.com/ggreer/the_silver_searcher), [pt](https://github.com/monochromegane/the_platinum_searcher) and others - unsurprisingly have them beat every other solution (= mine is the best!)
+- the fastest tool - for counting word frequency in large corpora - are those which are not heavily publicized, advertised or benchmarked on the 'net (grep!)
+
+For examples of people ranting about whose tool is faster, see:
+* [Hacker News - Sift: Grep on steroids (sift-tool.org)](https://news.ycombinator.com/item?id=10509802)
