@@ -6,7 +6,7 @@ there are at least half a dozen popular utilities that search for strings inside
 
 ### how?
 - testing was done on a very modest Intel Pentium N3540 @ 2.16GHz (4 cores)  with 8GB RAM running Windows 8.1 x64
-- the ```corpus.txt``` file is a 792 MB fragment of the OpenSubtitles2016 corpus [freely available here](http://opus.lingfil.uu.se/OpenSubtitles2016.php) or direct link to the [English version](http://opus.lingfil.uu.se/download.php?f=OpenSubtitles2016/en.tar.gz)
+- the ```corpus.txt``` file is a 792 MB fragment of the OpenSubtitles2016 corpus [freely available here](http://opus.lingfil.uu.se/OpenSubtitles2016.php) / direct link to the [English version](http://opus.lingfil.uu.se/download.php?f=OpenSubtitles2016/en.tar.gz)
 - an extensive collection of file searching binaries was tested, see below
 
 
