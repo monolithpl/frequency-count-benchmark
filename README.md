@@ -9,6 +9,8 @@ there are at least half a dozen popular utilities that search for strings inside
 - the ```corpus.txt``` file is a 792 MB fragment of the OpenSubtitles2016 corpus [freely available here](http://opus.lingfil.uu.se/OpenSubtitles2016.php) / direct link to the [English version](http://opus.lingfil.uu.se/download.php?f=OpenSubtitles2016/en.tar.gz)
 - an extensive collection of file searching binaries was tested, see below
 
+### tl;dr - operations per second (higher is better)
+![benchmark1](http://monolithpl.github.io/frequency-count-benchmark/benchmark.png "benchmark 800mb")
 
 ### benchmark candidates - popular text searching utilities
 Utility | Arch | Source url | Folder|
