@@ -20,7 +20,26 @@ Utility | Arch | Source url | Folder|
 |sift 0.8.0 | x64 | https://sift-tool.org/downloads/sift/sift_0.8.0_windows_amd64.zip | sift64|
 |find MS windows 8.1 | x64 | n/a (system) | n/a (system)|
 
-### benchmarks - 7 runs
+### average results of 7 runs
+|Utility | Average Time | Characters per second|
+|--------|--------------|----------------------|
+|ag 0.29.1 | 1.691857143 | 487,376,204|
+|ag 0.31.0 | 2.035142857 | 405,166,109|
+|GNU grep 2.5.1 | 3.366142857 | 244,960,166|
+|GNU grep 2.5.4 | 3.109571429 | 265,171,883|
+|GNU grep 2.5.4 | 4.200428571 | 196,306,376|
+|GNU grep 2.0d | 4.490285714 | 183,634,398|
+|GNU grep 2.24 | 2.710285714 | 304,237,634|
+|GNU grep 2.3 | 1.225714286 | 672,726,851|
+|GNU grep 2.4.2 | 1.246571429 | 661,471,050|
+|GNU grep 2.4.2 | 1.276714286 | 645,853,909|
+|pt 2.1.2 | 236.8115714 | 3,481,971|
+|pt 2.1.2 | 224.435 | 3,673,985|
+|sift 0.8.0 | 15.03757143 | 54,834,048|
+|sift 0.8.0 | 4.597142857 | 179,365,954|
+|find MS windows 8.1 | 196.0131429 | 4,206,712|
+
+### detailed benchmarks - 7 runs
 |Utility | Command | Run #1 | Run #2 | Run #3 | Run #4 | Run #5 | Run #6 | Run #7|
 |--------|---------|----------|----------|----------|----------|----------|----------|---------|
 |ag 0.29.1 | binaries\ag\ag -ciF "fair game" corpus.txt | 1.749 | 1.687 | 1.681 | 1.682 | 1.679 | 1.678 | 1.687|
@@ -37,3 +56,5 @@ Utility | Arch | Source url | Folder|
 |pt 2.1.2 | binaries\pt64\pt /c /i "fair game" corpus.txt | 227.625 | 223.743 | 223.763 | 223.813 | 224.1 | 223.907 | 224.094|
 |sift 0.8.0 | binaries\sift\sift -cQi "fair game" corpus.txt | 16.298 | 14.87 | 14.835 | 14.805 | 14.806 | 14.816 | 14.833|
 |sift 0.8.0 | binaries\sift64\sift -cQi "fair game" corpus.txt | 5.062 | 4.524 | 4.508 | 4.498 | 4.522 | 4.51 | 4.556|
+
+
