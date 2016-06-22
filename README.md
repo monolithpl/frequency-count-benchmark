@@ -122,6 +122,7 @@ Utility | Arch | Source url | Folder|
 Benchmarks are always hotly contested. Your mileage may vary. However, two conclusions come to mind:
 - benchmarks published by creators of the respective utilities - [sift](https://sift-tool.org/performance), [ag](https://github.com/ggreer/the_silver_searcher), [pt](https://github.com/monochromegane/the_platinum_searcher) and others - unsurprisingly have them beat every other solution. unfortunately, their claims do not stack up in this real use case scenario.
 - the fastest tool is the one that humbly doesn't advertise much - grep!
+- but a ***lot*** depends on how grep is compiled
 
 For a lengthy discussion, see:
 * [Hacker News - Sift: Grep on steroids (sift-tool.org)](https://news.ycombinator.com/item?id=10509802)
