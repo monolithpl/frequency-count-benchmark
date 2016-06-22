@@ -1,5 +1,6 @@
 # frequency count benchmark
 Benchmarking various solutions for counting word and phrase frequency in corpora.
+
 Also provides ready-to-use win32/win64 binaries of grep, ag, pt and sift for those who are too lazy to compile their own and just want the best tool for the job.
 
 ### why?
