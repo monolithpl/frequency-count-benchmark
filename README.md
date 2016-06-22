@@ -1,8 +1,8 @@
 # frequency count benchmark
-Benchmarking various solutions for counting word and phrase frequency in corpora.
+Benchmarking various solutions for counting word and phrase frequency in corpora. Also provides ready-to-use win32/win64 binaries of grep, ag, pt and sift for those who are too lazy to compile their own and just want the solution that works fastest!
 
 ### why?
-there are at least half a dozen popular utilities that search for strings inside text files. most of them claim to be the fastest. to test their claims, we put them to the test.
+There are at least half a dozen popular utilities that search for strings inside text files. Most of them claim to be the fastest. To test their claims, we put them to the test.
 
 ### how?
 - testing was done on a very modest Intel Pentium N3540 @ 2.16GHz (4 cores)  with 8GB RAM running Windows 8.1 x64
@@ -10,7 +10,7 @@ there are at least half a dozen popular utilities that search for strings inside
 - an extensive collection of file searching binaries was tested, see below
 
 ### tl;dr - operations per second (higher is better)
-![benchmark1](http://monolithpl.github.io/frequency-count-benchmark/benchmark.png "benchmark 800mb")
+![benchmark](http://monolithpl.github.io/frequency-count-benchmark/benchmark.png "benchmark 800mb")
 
 ### benchmark candidates - popular text searching utilities
 Utility | Arch | Source url | Folder|
@@ -119,10 +119,11 @@ Utility | Arch | Source url | Folder|
 - [highway](https://github.com/tkengo/highway) - doesn't have a count option
 
 ### the never-ending argument
-Benchmarks are always hotly contested. Your mileage may vary. However, two conclusions come to mind:
+Benchmarks are always hotly contested. Your mileage may vary. However, some conclusions come to mind:
 - benchmarks published by creators of the respective utilities - [sift](https://sift-tool.org/performance), [ag](https://github.com/ggreer/the_silver_searcher), [pt](https://github.com/monochromegane/the_platinum_searcher) and others - unsurprisingly have them beat every other solution. unfortunately, their claims do not stack up in this real use case scenario.
 - the fastest tool is the one that humbly doesn't advertise much - grep!
 - but a ***lot*** depends on how grep is compiled
+- x64 is not necessarily faster than x32
 
 For a lengthy discussion, see:
 * [Hacker News - Sift: Grep on steroids (sift-tool.org)](https://news.ycombinator.com/item?id=10509802)
