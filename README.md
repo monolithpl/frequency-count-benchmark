@@ -112,6 +112,8 @@ Utility | Arch | Source url | Folder|
 ### implementation details
 - see ```measure.cmd``` (case insensitive), ```measure2.cmd``` (case sensitive) and the respective benchmark runners ```run-measure.cmd``` and ```run-measure2.cmd```
 - number of characters of corpus.txt was established by running ``` cat corpus.txt | wc -m ```
+- as there's no ```time``` on windows, the freeware utility ```ptime``` was used to measure running time. see [here](http://www.pc-tools.net/win32/ptime/)
+- all binaries are available in the ```binaries``` folder of this repository
 
 ### wouldbe contenders
 - [highway](https://github.com/tkengo/highway) - doesn't have a count option
