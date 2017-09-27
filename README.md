@@ -14,6 +14,13 @@ There are at least half a dozen popular utilities that search for strings inside
 ### tl;dr - operations per second (higher is better)
 ![benchmark](http://monolithpl.github.io/frequency-count-benchmark/benchmark.png "benchmark 800mb")
 
+### the never-ending argument
+Benchmarks are always hotly contested. Your mileage may vary. However, some conclusions come to mind:
+- benchmarks published by creators of the respective utilities - [sift](https://sift-tool.org/performance), [ag](https://github.com/ggreer/the_silver_searcher), [pt](https://github.com/monochromegane/the_platinum_searcher) and others - unsurprisingly have them beat every other solution. unfortunately, their claims do not stack up in this real use case scenario.
+- the fastest tool is the one that humbly doesn't advertise much - grep!
+- but a ***lot*** depends on how grep is compiled
+- x64 is not necessarily faster than x32
+
 ### benchmark candidates - popular text searching utilities
 Utility | Arch | Source url | Folder|
 |-------|---------------|------------|-------|
@@ -120,13 +127,6 @@ Utility | Arch | Source url | Folder|
 
 ### wouldbe contenders
 - [highway](https://github.com/tkengo/highway) - doesn't have a count option
-
-### the never-ending argument
-Benchmarks are always hotly contested. Your mileage may vary. However, some conclusions come to mind:
-- benchmarks published by creators of the respective utilities - [sift](https://sift-tool.org/performance), [ag](https://github.com/ggreer/the_silver_searcher), [pt](https://github.com/monochromegane/the_platinum_searcher) and others - unsurprisingly have them beat every other solution. unfortunately, their claims do not stack up in this real use case scenario.
-- the fastest tool is the one that humbly doesn't advertise much - grep!
-- but a ***lot*** depends on how grep is compiled
-- x64 is not necessarily faster than x32
 
 For a lengthy discussion, see:
 * [Hacker News - Sift: Grep on steroids (sift-tool.org)](https://news.ycombinator.com/item?id=10509802)
